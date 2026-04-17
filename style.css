@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background: black;
+  color: white;
+  overflow-x: hidden;
+}
+
+/* HERO */
+.hero {
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  font-size: 3rem;
+  letter-spacing: 0.4rem;
+  z-index: 10;
+}
+
+/* PARALLAX LAYERS */
+.layer {
+  position: absolute;
+  width: 100%;
+  height: 120%;
+  background-size: cover;
+  background-position: center;
+}
+
+.layer-back {
+  background-image: url("https://images.unsplash.com/photo-1493238792000-8113da705763");
+  z-index: 1;
+}
+
+.layer-mid {
+  background-image: url("https://images.unsplash.com/photo-1503376780353-7e6692767b70");
+  z-index: 2;
+  opacity: 0.6;
+}
+
+.layer-front {
+  background-image: url("https://images.unsplash.com/photo-1502877338535-766e1452684a");
+  z-index: 3;
+  opacity: 0.4;
+}
+
+/* SECTIONS */
+.section {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  position: relative;
+}
+
+/* OVERLAY */
+.section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.65);
+}
+
+.content {
+  position: relative;
+  z-index: 2;
+  max-width: 700px;
+  padding: 20px;
+}
+
+.content h2 {
+  font-size: 2.8rem;
+  margin-bottom: 20px;
+}
+
+.content p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #ddd;
+}
+
+/* CORRECT CAR IMAGES */
+
+/* Ferrari SF90 */
+.ferrari {
+  background-image: url("https://images.unsplash.com/photo-1621135802920-133df287f89c");
+}
+
+/* Lamborghini Aventador */
+.lambo {
+  background-image: url("https://images.unsplash.com/photo-1552519507-da3b142c6e3d");
+}
+
+/* Tesla Model S */
+.tesla {
+  background-image: url("https://images.unsplash.com/photo-1617788138017-80ad40651399");
+}
+
+/* Range Rover */
+.rover {
+  background-image: url("https://images.unsplash.com/photo-1504215680853-026ed2a45def");
+}
+
+/* Porsche 911 */
+.porsche {
+  background-image: url("https://images.unsplash.com/photo-1503376780353-7e6692767b70");
+}
+
+/* BMW M4 */
+.bmw {
+  background-image: url("https://images.unsplash.com/photo-1617814076367-b759c7d7e738");
+}
